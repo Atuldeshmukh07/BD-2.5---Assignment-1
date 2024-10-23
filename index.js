@@ -250,7 +250,7 @@ app.get('/products/sort/price-high-to-low', (req, res) => {
   let copyProduct = products.slice();
   copyProduct.sort(sortedProducts);
   res.json(copyProduct);
-});
+}); 
 
 // Endpoint 3: Get the products sorted by “low-to-high” price.
 function sortedProducts(product1, product2) {
